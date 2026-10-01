@@ -6,6 +6,7 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    environment: release
     if: >
       ${{ 
         !startsWith(github.event.head_commit.message, 'chore(release): publish') &&
@@ -94,6 +95,6 @@ jobs:
         run: |
           npx nx release --specifier="${{ steps.specifier.outputs.specifier }}" --yes
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
