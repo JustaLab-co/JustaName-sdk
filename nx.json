@@ -191,13 +191,6 @@
       "packages/@justaname.id/react",
       "packages/@justaname.id/sdk",
       "packages/@justaname.id/siwens",
-      "packages/@justweb3/ui",
-      "packages/@justweb3/widget",
-      "packages/@justverified/plugin",
-      "packages/@justweb3/efp-plugin",
-      "packages/@justweb3/poap-plugin",
-      "packages/@justweb3/xmtp-plugin",
-      "packages/@justweb3/dentity-plugin",
       "packages/siwens"
     ]
   },
